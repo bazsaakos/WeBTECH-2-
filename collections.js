@@ -75,14 +75,14 @@ MongoClient.connect(url, function(err, db) {
  
   var dbo = db.db("mydb");
 
-
+/*User Collection*/
 
   dbo.createCollection("user", function(err, res) {
 
     console.log("Collection created!");
   });
 
-
+/*Items Collection*/
 
 
   dbo.createCollection("items", function(err, res) {

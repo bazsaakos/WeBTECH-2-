@@ -76,7 +76,7 @@ MongoClient.connect(url, function(err, db) {
   var dbo = db.db("mydb");
 
 
-  //felhasználók állománya
+
   dbo.createCollection("user", function(err, res) {
 
     console.log("Collection created!");
@@ -84,7 +84,7 @@ MongoClient.connect(url, function(err, db) {
 
 
 
-  //termékek állománya (itt most könyvek)
+
   dbo.createCollection("items", function(err, res) {
      
       console.log("Collection created!");
